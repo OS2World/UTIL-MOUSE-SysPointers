@@ -5,7 +5,7 @@ SysPointers allows you to use custom pointers with OS/2.
 
 LICENSE
 ===============
-* Freeware - Non Commercial use.
+* GNU GPL
 
 COMPILE TOOLS
 ===============
