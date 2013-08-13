@@ -1,0 +1,11 @@
+system os2v2_pm
+file sysptr.obj
+name sysptr.exe
+option modname=SYSPTR
+option description 'SysPointers 1.0Beta by Mccoy'
+option stub=OS2STUB.EXE
+option manyautodata
+option heapsize=4096
+option stack=32768
+option protmode
+

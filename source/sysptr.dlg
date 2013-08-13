@@ -1,0 +1,25 @@
+DLGINCLUDE 1 "E:\C\SYSPTR\dialog.h"
+
+DLGTEMPLATE MAINDIALOG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "SysPointers V1.0 by E.Demarin (mccoy@maya.dei.unipd.it)", 
+            MAINDIALOG, 66, 12, 299, 119, WS_VISIBLE, FCF_TITLEBAR
+    BEGIN
+        LISTBOX         MYLBOX, 5, 29, 195, 85
+        PUSHBUTTON      "~Choose pointer...", SELECTFILE, 212, 99, 76, 15
+        PUSHBUTTON      "~Uninstall", UNINSTALL, 212, 85, 76, 14
+        DEFPUSHBUTTON   "~Ok", DISMISS, 213, 71, 76, 14
+        LTEXT           "Dummy", INFOS, 8, 8, 280, 8, DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        GROUPBOX        "", 106, 3, 3, 290, 22
+        CONTROL         "", CURRSHAPE, 234, 41, 30, 22, WC_VALUESET, VS_ICON | 
+                        VS_BORDER | WS_GROUP | WS_TABSTOP | WS_VISIBLE
+                        CTLDATA 8, 0, 1, 1
+        CTEXT           "Current system default", 108, 216, 31, 69, 8, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        GROUPBOX        "", 109, 208, 28, 85, 44
+    END
+END

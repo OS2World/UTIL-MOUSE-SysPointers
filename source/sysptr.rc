@@ -1,0 +1,13 @@
+/* Shutdown.rc V1 */
+#include <os2.h>
+#include "sysptr.h"
+#include "dialog.h"
+
+ICON RS_ICON SYSPTR.ICO
+
+DEFAULTICON SYSPTR.ICO
+
+rcinclude SYSPTR.DLG
+
+
+
